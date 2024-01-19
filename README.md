@@ -9,4 +9,4 @@ Aplicação Spring Boot que simula o gerenciamento de estoque de materiais de um
 
 ## Configuração do Banco de Dados
 1. Crie um banco de dados chamado 'MateriaisConstEstoque'.
-2. Ou configure as credenciais do banco no arquivo 'application.properties' conforme sua necessidade.
+2. Configure as credenciais do banco no arquivo 'application.properties'.
