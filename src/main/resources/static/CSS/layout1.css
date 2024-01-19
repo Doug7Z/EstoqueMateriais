@@ -1,0 +1,133 @@
+html{
+	
+}
+
+.container-nav{
+	 background-color: rgb(41, 180, 249);
+	 
+/*    height: 80px;*/
+/*    display: flex;*/
+/*    align-items: flex-end; */
+/*    justify-content: center;*/
+}
+.container-nav .nav {
+/*    margin-top: 20px; */
+}
+.container-nav .nav .nav-item a{
+    color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+    color: black;
+}
+
+.container-logo{
+/*	height: 80px;*/
+/*	background-color: black;*/
+padding-left: 50px;
+padding-top: 8px;
+}
+.logo{
+	width:200px;
+	height: 60px;
+	
+}
+
+.btn.btn-outline-success{
+	border-color: black;
+	color: black;
+}
+.btn.btn-outline-success:hover{
+	background-color:rgb(41, 180, 249) ;
+	color: white;
+}
+
+
+.table {
+    margin: 0 auto;
+    width: 98%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    text-align: center;
+}
+
+.thd{
+	background-color:rgb(42, 184, 255) ;
+}
+
+.input-group-text{
+	width: 110px;
+	
+	
+}
+
+.form-container .form-control {
+    width: 40%;
+    margin-left: 33%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.form-container label {
+    margin-left: 33%;
+    margin-top: px;
+    font-weight: bold;
+}
+
+.btn-Cadastro{
+	margin-left: 50%;
+}
+
+
+.container-fluid{
+	margin-left: 40%;
+	
+}
+
+.btn-container-alterar{
+	margin-left: 45%;
+}
+
+.btn-container-deletar{
+	margin-left: 58%;
+	margin-top: -54px;
+}
+
+.btn-alt-est{
+	margin-left: 48%;
+}
+
+.erro-container{
+	text-align: center;
+	
+	margin-bottom: 5px;
+}
+.erro-msg{
+	color: darkred;
+	font: bold;
+}
+
+.titulo{
+	margin-top: 10px;
+	margin-left: 45%;
+}
+.titulo-container-cadastroMateriais{
+	margin-top: 10px;
+	margin-left: 40%;
+}
+
+.titulo-container-alterar{
+	margin-top: 15px;
+	margin-left: 48%;
+	margin-bottom: -50px;
+}
+.titulo-alterarMaterial{
+	margin-top: 10px;
+	margin-left: 48%;
+	margin-bottom: -25px;
+}

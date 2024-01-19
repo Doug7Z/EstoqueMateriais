@@ -1,0 +1,163 @@
+<html>
+	<head>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" type="text/css" th:href="@{/CSS/layout1.css}" />
+	</head>
+	
+	
+	
+	
+	
+	
+	
+	<body>
+		<header>		
+			<div class="container-logo">
+			    <a href="/inicio/Estoque">
+			        <img class="logo" src="/imagem/Construtora_LogoSF.png" alt="Logo">
+			    </a>
+			</div>
+
+			<div class="container-nav">				
+				<ul class="nav justify-content-center">	
+				  <li class="nav-item">
+				    <a class="nav-link active" th:href="@{/inicio/Estoque}">Início</a>
+				  </li>				
+					  			  
+				<li class="nav-item">
+	                <div class="dropdown">
+	                    <a class="nav-link dropdown-toggle" href="" role="button" id="materialDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+	                        Material
+	                    </a>
+	                    <ul class="dropdown-menu" aria-labelledby="entradaEstoqueDropdown">
+	                        <li>
+	                            <a class="dropdown-item" th:href="@{/MaterialCadastro}">Cadastrar</a>
+	                        </li>
+	                        <li>
+	                            <a class="dropdown-item" th:href="@{/Estoque/material/alterar}">Alterar</a>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </li>
+				  			  
+				  			  
+			<li class="nav-item">
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="" role="button" id="entradaEstoqueDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Estoque
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="entradaEstoqueDropdown">
+                        <li>
+                            <a class="dropdown-item" th:href="@{/estoqueEntrada}">Adicionar Estoque</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" th:href="@{/lista/Entrada/EstoqueNF}">Histórico</a>
+                        </li>
+                         <li>
+                            <a class="dropdown-item" th:href="@{/Estoque/NF/Estoque/alterar/}">Corrigir Estoque</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+				</ul>			
+			</div>
+		</header>
+		
+			<div class="form-container">
+			<div class="form-floating mb-3">
+			<input type="text"  class="form-control" th:value="${material.codigo}" disabled>
+			<label>Código:</label>
+			</div>
+			</div>
+		
+		<div class="form-container">
+			<div class="form-floating mb-3">
+			<input type="text" class="form-control" th:value="${material.item}" disabled>
+			<label>Item:</label>
+			</div>
+			</div>
+			
+			<div class="form-container">
+			<div class="form-floating mb-3">
+			<input type="text"  class="form-control" th:value="${material.descricao}" disabled>
+			<label>Descrição:</label>
+			</div>
+			</div>
+			
+			<div class="form-container">
+			<div class="form-floating mb-3">
+			<input type="text"  class="form-control" th:value="${material.codNcm}" disabled>
+			<label>NCM</label>
+			</div>
+			</div>
+				
+		<form method="post">
+			
+			<div class="form-container">
+			<div class="form-floating mb-3">
+			<input type="hidden" name="EstoqueId" th:value="${material.id}">
+			</div>
+			</div>
+			
+					
+			
+			<div class="form-container">
+			<div class="form-floating mb-3">
+			<input type="number" name="qtdEstoqueEntrada" class="form-control">
+			<label>Quantidade item</label>
+			</div>
+			</div>
+			
+			<div class="form-container">
+			<div class="form-floating mb-3">
+			<input type="text" name="nomeComprador" class="form-control">
+			<label>Comprador</label>
+			</div>
+			</div>
+			
+			<div class="form-container">
+			<div class="form-floating mb-3">
+			<input type="text" name="dataAtual" class="form-control" >
+			<label>Data de hoje</label>
+			</div>
+			</div>
+			
+			<div class="form-container">
+			<div class="form-floating mb-3">
+			<input type="text" name="numeroNotaFiscal" class="form-control">
+			<label>Número da NF</label>
+			</div>
+			</div>
+			
+			<div class="form-container">
+			<div class="form-floating mb-3">
+			<input type="text" name="dataEmissaoNF" class="form-control">
+			<label>Data emissão NF</label>
+			</div>
+			</div>
+			
+			<div class="form-container">
+			<div class="form-floating mb-3">
+			<input type="text" name="fornecedor" class="form-control">
+			<label>Fornecedor</label>
+			</div>
+			</div>
+			
+			<div class="form-container">
+			<div class="form-floating mb-3">
+			<input type="text" name="transportadora" class="form-control">
+			<label>Transportadora</label>
+			</div>
+			</div>
+		
+			<div class="btn-Cadastro">
+			<button class="btn btn-outline-success" type="submit">Enviar</button>	
+			</div>
+		</form>
+		
+	</body>
+	
+	
+</html>
