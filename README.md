@@ -2,10 +2,10 @@
 Aplicação Spring Boot que simula o gerenciamento de estoque de materiais de uma microempresa.
 
 ## Tecnologias Utilizadas
-**Java Spring Boot:** 
-**PostgreSQL:** 
-**HTML** 
-**Thymeleaf:**
+**Java Spring Boot,** 
+**PostgreSQL,** 
+**HTML,** 
+**Thymeleaf**
 
 ## Configuração do Banco de Dados
 1. Crie um banco de dados chamado 'MateriaisConstEstoque'.
